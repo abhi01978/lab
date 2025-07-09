@@ -1,0 +1,18 @@
+<%- include("partials/navbar") %>
+<div class="max-w-4xl mx-auto mt-8">
+  <h2 class="text-2xl font-bold mb-6" style="margin-left: 20px;">Available Reports</h2>
+  <% if (reports.length === 0) { %>
+    <p class="text-red-600">No reports uploaded yet.</p>
+  <% } %>
+  <ul class="space-y-4">
+    <% reports.forEach(report => { %>
+      <li class="bg-white p-4 rounded shadow flex justify-between items-center">
+        <div>
+          <p class="font-semibold"><%= report.originalName %></p>
+          <p class="text-sm text-gray-500"><%= report.uploadedAt.toLocaleString() %></p>
+        </div>
+        <a href="/uploads/reports/<%= report.filename %>" class="text-blue-600 font-medium hover:underline" download>Download</a>
+      </li>
+    <% }) %>
+  </ul>
+</div>

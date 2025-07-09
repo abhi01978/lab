@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tara diagnostics charitable</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--        CSS file-->
+    <link
+      href="Bootstrap/css/bootstrap.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <!--        external css-->
+    <link href="Bootstrap/css/style.css" rel="stylesheet" type="text/css" />
+    <!--        fontawesome css-->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="Bootstrap/js/jquery-3.7.1.min.js"></script>
+    <!-- Swiper CSS (in <head>) -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+    <style>
+      .carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-size: 50% 50%;
+}
+.card-title {
+  font-weight: 600;
+}
+
+    </style>
+  </head>
+
+  <body>
+    <!-- Dark Bootstrap Navbar without Toggle -->
+<nav class="navbar navbar-dark bg-dark border-bottom shadow-sm">
+  <div class="container d-flex justify-content-between align-items-center">
+    <a class="navbar-brand fw-bold text-white d-flex align-items-center gap-2" href="/">
+    </a>
+
+    <ul class="navbar-nav flex-row gap-3 align-items-center">
+
+      <li class="nav-item">
+        <a class="nav-link fw-semibold text-info" href="/admin/reports">Reports</a>
+      </li>
+
+      <% if (!isAdmin) { %>
+        <li class="nav-item">
+          <a class="nav-link fw-semibold text-success" href="/admin/login">Login</a>
+        </li>
+      <% } else { %>
+        <li class="nav-item">
+          <a class="nav-link fw-semibold text-warning" href="/admin/report-upload">Upload</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link fw-semibold text-danger" href="/admin/logout">Logout</a>
+        </li>
+      <% } %>
+
+    </ul>
+  </div>
+</nav>
+
+
+    <header class="header-1">
+  <!-- Topbar -->
+  <div class="bg-dark text-white py-2">
+    <div class="container d-flex justify-content-between align-items-center flex-wrap">
+      <div>
+        <i class="fas fa-phone-alt me-2"></i> +91 98765 43210, +91 78279 45651
+        <span class="ms-3"><i class="fas fa-envelope me-2"></i> info@taradiagnostics.com</span>
+      </div>
+      <div class="d-none d-lg-flex gap-3">
+        <a href="#" class="text-white"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" class="text-white"><i class="fab fa-linkedin-in"></i></a>
+        <a href="#" class="text-white"><i class="fab fa-youtube"></i></a>
+        <a href="#" class="text-white"><i class="fab fa-instagram"></i></a>
+      </div>
+    </div>
+  </div>
+
+ <!-- Top Brand Bar -->
+<div class="bg-white py-3 shadow-sm border-bottom sticky-top" style="z-index: 1040;">
+  <div class="container">
+    <div class="d-flex justify-content-center align-items-center">
+      <h5 class="mb-0 fw-bold text-primary text-uppercase text-center" style="letter-spacing: 1px; font-family: 'Segoe UI', sans-serif;">
+        Tara <font color="red">Diagnos</font>tics Charitable
+      </h5>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm sticky-top py-2">
+  <div class="container">
+    <!-- Logo & Brand Name -->
+    <a class="navbar-brand d-flex align-items-center gap-2" href="#">
+      <img src="/image/images.jpg" alt="Logo" style="max-height: 45px;">
+      <span class="fw-bold text-dark fs-5">Tara Diagnostics</span>
+    </a>
+
+    <!-- Mobile Toggle Button -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-navigation" aria-controls="main-navigation" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Navigation Links -->
+    <div class="collapse navbar-collapse" id="main-navigation">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" href="/">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#popular-tests">At Your Services</a>
+        </li>
+
+        <!-- Facilities Dropdown -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#facilities" data-bs-toggle="dropdown">Facilities</a>
+          <ul class="dropdown-menu">
+            <li class="dropdown-submenu">
+              <!-- <a class="dropdown-item dropdown-toggle" href="#">Radiology</a> -->
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#CBC">MRI</a></li>
+                <li><a class="dropdown-item" href="CBC">CT</a></li>
+              </ul>
+            </li>
+            <li><a class="dropdown-item" href="#popular-tests">LAB</a></li>
+            <li><a class="dropdown-item" href="##popular-tests">OPD</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-item"><a class="nav-link" href="#enquiry">Appointments</a></li>
+        <li class="nav-item"><a class="nav-link" href="/admin/reports">Online Report</a></li>
+        <li class="nav-item"><a class="nav-link" href="#healthcare">Health Packages</a></li>
+        <li class="nav-item"><a class="nav-link" href="#enquiry">Contact Us</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+</header>
+
+    
+   <!-- Modern Professional Diagnostic Header -->
+<header class="bg-light py-5" id="home">
+  <div class="container py-5">
+    <div class="row align-items-center">
+      
+      <!-- Left Content -->
+      <div class="col-lg-6 mb-5 mb-lg-0">
+        <div class="content">
+          <h4 class="text-uppercase text-primary mb-3 fw-semibold">
+            We are expert
+          </h4>
+          <h2 class="display-5 fw-bold text-dark mb-4">
+            Believe in World-Class <br />
+            Diagnostic Services
+          </h2>
+          <p class="lead text-muted mb-4">
+            Our state-of-the-art diagnostic center offers comprehensive and reliable medical testing services that help healthcare professionals make informed decisions about your health.
+          </p>
+          <div class="d-flex flex-wrap gap-3 mt-4">
+            <a href="#healthcare" class="btn btn-primary px-4 py-2">
+              Health Services
+            </a>
+            <a href="#enquiry" class="btn btn-outline-primary px-4 py-2">
+              Enquiry Now
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right Image -->
+      <div class="col-lg-6 text-center">
+        <img src="/image/banner-removebg-preview.png"
+             alt="Diagnostic Lab"
+             class="img-fluid"
+             style="max-height: 450px;" />
+      </div>
+
+    </div>
+  </div>
+</header>
+<!-- About Us -->
+  <section class="bg-white py-5 py-md-6" id="about">
+  <div class="container">
+    
+    <!-- About Us -->
+    <div class="row justify-content-center text-center mb-5 mt-20">
+      <div class="col-lg-8">
+        <h2 class="fw-bold mb-3 text-dark">About Us</h2>
+        <p class="text-muted fs-5">
+          There live the blind texts separated they right at the coast of the Semantics.
+        </p>
+      </div>
+    </div>
+
+    <!-- Content Row -->
+    <div class="row align-items-center">
+      
+      <!-- Left Image -->
+      <div class="col-lg-6 mb-4 mb-lg-0">
+        <img src="/image/about.png" alt="About Tara Diagnostics" class="img-fluid rounded shadow" />
+      </div>
+
+      <!-- Right Content -->
+      <div class="col-lg-6">
+        <div class="ps-lg-4">
+          <p class="mb-4 text-muted fs-6">
+            <strong class="text-dark">Tara Diagnostics</strong> is committed to delivering accurate,
+            affordable, and timely diagnostic services to support better
+            healthcare outcomes for all. Founded with the vision of making
+            quality diagnostic testing accessible to every individual, Tara
+            Diagnostics combines modern technology, skilled professionals, and patient-centric care.
+          </p>
+          <p class="mb-4 text-muted fs-6">
+            Our state-of-the-art facilities are equipped with advanced diagnostic equipment,
+            and we offer a comprehensive range of tests.
+          </p>
+          <p class="mb-0 text-muted fs-6">
+            At Tara Diagnostics, we believe in empowering doctors and patients with reliable data,
+            helping in early detection, diagnosis, and effective treatment planning.
+            We uphold the highest standards of hygiene, accuracy, and ethics in every
+            service we provide. Driven by innovation and guided by compassion, Tara Diagnostics
+            is your trusted partner on the path to better health.
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+<!-- END -->
+<section class="py-5 bg-light" id="popular-tests">
+  <div class="container">
+    <!-- Heading -->
+    <div class="row justify-content-center mb-4">
+      <div class="col-lg-8 text-center">
+        <h2 class="fw-bold mb-3 text-dark">Popular Test</h2>
+        <p class="text-muted">Explore our most recommended health checkups</p>
+      </div>
+    </div>
+
+    <!-- Carousel -->
+    <div id="popularTestCarousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+
+        <!-- Slide 1 -->
+        <div class="carousel-item active">
+          <div class="row">
+            <!-- Card 1 -->
+            <div class="col-md-6 col-lg-3 mb-4">
+              <div class="card h-100 border-0 shadow-sm">
+                <img src="https://hanumanbalajicharitablediagnostics.org/uploads/Fever-and-total-care.jpg" class="card-img-top" alt="Total Care Checkup">
+                <div class="card-body">
+                  <h5 class="card-title">Total Care Checkup</h5>
+                  <p class="card-text">Includes KFT, LFT, HbA1C, Vitamin D, B12, Thyroid, and more.</p>
+                  <!-- <a href="photo/Total Care Checkup.jpg" class="btn btn-sm btn-primary">Know More</a> -->
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="col-md-6 col-lg-3 mb-4">
+              <div class="card h-100 border-0 shadow-sm">
+                <img src="/image/Digital Chest X-ray.jpeg" class="card-img-top" alt="Digital Chest X-ray">
+                <div class="card-body">
+                  <h5 class="card-title">Digital Chest X-ray</h5>
+                  <p class="card-text">Modern digital imaging to diagnose chest-related issues.</p>
+                  <!-- <a href="total-care-checkup.php" class="btn btn-sm btn-primary">Know More</a> -->
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="col-md-6 col-lg-3 mb-4" id="CBC">
+              <div class="card h-100 border-0 shadow-sm">
+                <img src="/image/CBC Test" class="card-img-top" alt="CBC Test">
+                <div class="card-body">
+                  <h5 class="card-title">CBC Test</h5>
+                  <p class="card-text">Complete Blood Count including RBC, WBC, Platelets, Hemoglobin, etc.</p>
+                  <!-- <a href="total-care-php" class="btn btn-sm btn-primary">Know More</a> -->
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="col-md-6 col-lg-3 mb-4">
+              <div class="card h-100 border-0 shadow-sm">
+                <img src="/image/KFT" class="card-img-top" alt="KFT Test">
+                <div class="card-body">
+                  <h5 class="card-title">KFT / RFT Test</h5>
+                  <p class="card-text">Evaluate kidney function including Creatinine, Urea, Electrolytes, etc.</p>
+                  <!-- <a href="total-care-checkup.php" class="btn btn-sm btn-primary">Know More</a> -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="py-5 text-dark" style="background: url('https://hanumanbalajicharitablediagnostics.org/web/images/1920-650-2.jpg') center center / cover no-repeat;" id="healthcare">
+  <div class="container">
+    <!-- Heading -->
+    <div class="row justify-content-center mb-4">
+      <div class="col-lg-8 text-center">
+        <h2 class="fw-bold mb-3 text-black">Health Packages</h2>
+        <p class="text-light">Choose from our best diagnostic packages to monitor your health regularly.</p>
+      </div>
+    </div>
+
+    <!-- Grid Cards -->
+    <div class="row">
+      <!-- Card 1 -->
+      <div class="col-md-6 col-lg-3 mb-4">
+        <div class="card h-100 border-0 shadow-sm">
+          <img src="/image/Total Care Checkup.jpg" class="card-img-top" alt="Total Care Checkup">
+          <div class="card-body">
+            <h5 class="card-title">Total Care Checkup</h5>
+            <p class="card-text">A comprehensive health package to assess your overall well-being and detect early signs of illness.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="col-md-6 col-lg-3 mb-4">
+        <div class="card h-100 border-0 shadow-sm">
+          <img src="/image/CBC Test" class="card-img-top" alt="CBC Test">
+          <div class="card-body">
+            <h5 class="card-title">Complete Haemogram (CBC)</h5>
+            <p class="card-text">Provides detailed info about RBCs, WBCs, and platelets to check blood-related conditions.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="col-md-6 col-lg-3 mb-4">
+        <div class="card h-100 border-0 shadow-sm">
+          <img src="/image/Super Care Health Package.jpg" class="card-img-top" alt="Super Care Health Package">
+          <div class="card-body">
+            <h5 class="card-title">Super Care Health Package</h5>
+            <p class="card-text">A deeper full-body diagnostic package with essential blood tests, organ function checks, and preventive screenings.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 4 -->
+      <div class="col-md-6 col-lg-3 mb-4">
+        <div class="card h-100 border-0 shadow-sm">
+          <img src="/image/1692777256.jpg" class="card-img-top" alt="Basic Care">
+          <div class="card-body">
+            <h5 class="card-title">Basic Care Health Package</h5>
+            <p class="card-text">Affordable package for early detection of common health issues like anemia, infections, and sugar irregularities.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="py-5 bg-light" id="facilities">
+  <div class="container">
+    <div class="row justify-content-center mb-4">
+      <div class="col-lg-8 text-center">
+        <h2 class="fw-bold mb-3 text-dark">Facilities</h2>
+        <p class="text-muted">Explore our advanced diagnostic and imaging services</p>
+      </div>
+    </div>
+
+    <!-- Carousel -->
+    <div id="facilitiesCarousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+
+        <!-- Slide 1 -->
+        <div class="carousel-item active">
+          <div class="d-flex flex-nowrap justify-content-center">
+            <div class="card h-100 border-0 shadow-sm me-3" style="flex: 0 0 auto; width: 50%;">
+              <img src="/image/MRI Scan.jpg" class="card-img-top" alt="MRI Scan">
+              <div class="card-body">
+                <h5 class="card-title">MRI Scan</h5>
+                <p class="card-text">Non-invasive imaging for brain, spine, joints, and soft tissues — no radiation exposure.</p>
+              </div>
+            </div>
+
+            <div class="card h-100 border-0 shadow-sm" style="flex: 0 0 auto; width: 50%;">
+              <img src="/image/CT Scan" class="card-img-top" alt="CT Scan">
+              <div class="card-body">
+                <h5 class="card-title">CT Scan</h5>
+                <p class="card-text">Uses advanced X-ray technology to create detailed images of bones, lungs, abdomen, brain, etc.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 2 -->
+        <div class="carousel-item">
+          <div class="d-flex flex-nowrap justify-content-center">
+            <div class="card h-100 border-0 shadow-sm me-3" style="flex: 0 0 auto; width: 50%;">
+              <img src="/image/Pathology Lab.jpeg" class="card-img-top" alt="Pathology Lab">
+              <div class="card-body">
+                <h5 class="card-title">Pathology Lab</h5>
+                <p class="card-text">Fully automated lab with expert pathologists ensuring accurate and timely diagnostic results.</p>
+              </div>
+            </div>
+
+            <div class="card h-100 border-0 shadow-sm" style="flex: 0 0 auto; width: 50%;">
+              <img src="/image/PET-CT Scan" class="card-img-top" alt="PET-CT Scan">
+              <div class="card-body">
+                <h5 class="card-title">PET-CT Scan</h5>
+                <p class="card-text">Combines PET & CT scans to detect and monitor cancer, neurological and cardiac conditions.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Controls -->
+      <button class="carousel-control-prev" type="button" data-bs-target="#facilitiesCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#facilitiesCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </button>
+    </div>
+  </div>
+</section>
+    <!-- END OF TESTIMONIALS -->
+<section class="py-5 bg-light" id="enquiry">
+  <div class="container">
+    <!-- Heading -->
+    <div class="row justify-content-center mb-4">
+      <div class="col-lg-8 text-center">
+        <h2 class="fw-bold mb-3 text-dark">Enquiry</h2>
+        <p class="text-muted">
+          There live the blind texts separated they right at the coast of the Semantics.
+        </p>
+      </div>
+    </div>
+
+    <!-- Form Card -->
+    <div class="row justify-content-center" id="#enquire">
+      <div class="col-lg-8">
+        <div class="card shadow-sm border-0">
+          <div class="card-body p-4">
+            <form novalidate>
+              <div class="mb-3">
+                <input
+                  type="text"
+                  class="form-control"
+                  id="fname"
+                  name="fname"
+                  placeholder="Full name"
+                />
+              </div>
+              <div class="mb-3">
+                <input
+                  type="email"
+                  class="form-control"
+                  id="email"
+                  name="email"
+                  placeholder="Email address"
+                />
+              </div>
+              <div class="mb-3">
+                <input
+                  type="text"
+                  class="form-control"
+                  id="phone"
+                  name="phone"
+                  placeholder="Phone number"
+                />
+              </div>
+              <div class="mb-3">
+                <textarea
+                  class="form-control"
+                  id="message"
+                  name="message"
+                  rows="4"
+                  placeholder="Please enter your message"
+                ></textarea>
+              </div>
+              <p id="status" class="mb-3"></p>
+              <button type="submit" class="btn btn-primary w-100">
+                Submit Query
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+   <footer class="footer-2 bg-dark text-light pt-5">
+  <div class="footer-pri pb-4">
+    <div class="container">
+      <div class="row">
+        <!-- About -->
+        <div class="col-lg-3 mb-4">
+          <div class="widget widget-about">
+            <!-- <a href="index.html">
+              <img src="logo.png" class="logo-footer mb-3" alt="Logo" width="120" />
+            </a> -->
+            <p class="footer-text">
+              A wonderful serenity has taken possession of my entire soul,
+              like these sweet mornings of spring which I enjoy with my whole heart.
+            </p>
+            <ul class="social list-inline mt-3">
+              <li class="list-inline-item">
+                <a href="#"><i class="fab fa-facebook-f text-white fs-5"></i></a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#"><i class="fab fa-twitter text-white fs-5"></i></a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#"><i class="fab fa-linkedin-in text-white fs-5"></i></a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#"><i class="fab fa-instagram text-white fs-5"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Contact -->
+        <div class="col-lg-3 mb-4">
+          <div class="widget widget-contact">
+            <h5 class="text-white fw-bold mb-3">Reach Out</h5>
+            <ul class="footer-text list-unstyled">
+              <li class="mb-2"><i class="fas fa-map-marker-alt me-2"></i> Yugpurush Mahashay Dharampal MDH Charitable Diagnostic Bhawan, Karkardooma, New Delhi-110092</li>
+              <li class="mb-2"><i class="fas fa-phone me-2"></i> +91 98765 43210, 7827945651</li>
+              <li><i class="fas fa-envelope me-2"></i> info@taradiagnostics.com</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Useful Links -->
+        <div class="col-lg-3 mb-4">
+          <div class="widget widget-links">
+            <h5 class="text-white fw-bold mb-3">Useful Links</h5>
+            <ul class="list-unstyled footer-text">
+              <li><a href="#" class="text-light text-decoration-none">View Departments</a></li>
+              <li><a href="#contact.html" class="text-light text-decoration-none">Contact Us</a></li>
+              <li><a href="#doctors-style-2.html" class="text-light text-decoration-none">Doctors On Panel</a></li>
+              <li><a href="#why-us-1.html" class="text-light text-decoration-none">Facilities Available</a></li>
+              <li><a href="#about-us-1.html" class="text-light text-decoration-none">About Us</a></li>
+              <li><a href="#policies.html" class="text-light text-decoration-none">Hospital Rules</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Timings -->
+        <div class="col-lg-3 mb-4">
+          <div class="widget widget-timings">
+            <h5 class="text-white fw-bold mb-3">Hospital Timings</h5>
+            <table class="table table-bordered text-light">
+              <tbody>
+                <tr>
+                  <td>Mon - Sun</td>
+                  <td>24 x 7</td>
+                </tr>
+                <tr>
+                  <td>All Days Open</td>
+                  <td>24 Hours</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Secondary Footer -->
+  <div class="footer-sec bg-secondary text-light py-3">
+    <div class="container d-flex justify-content-between flex-wrap">
+      <ul class="list-inline mb-0">
+        <li class="list-inline-item me-3"><a href="#" class="text-light text-decoration-none">Privacy Policy</a></li>
+        <li class="list-inline-item me-3"><a href="#" class="text-light text-decoration-none">Terms & Conditions</a></li>
+        <li class="list-inline-item"><a href="#" class="text-light text-decoration-none">Usage Rights</a></li>
+      </ul>
+      <p class="mb-0 text-light">&copy; 2025, Shailendra Kr — All Rights Reserved.</p>
+    </div>
+  </div>
+</footer>
+
+    <!-- Swiper JS (before </body>) -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+  </body>
+</html>
