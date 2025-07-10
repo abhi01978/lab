@@ -50,19 +50,19 @@
     <ul class="navbar-nav flex-row gap-3 align-items-center">
 
       <li class="nav-item">
-        <a class="nav-link fw-semibold text-info" href="/admin/reports">Download lab  Reports</a>
+        <a class="nav-link fw-semibold text-info" style="font-size: 20px" href="/admin/reports">Download lab  Reports</a>
       </li>
 
       <% if (!isAdmin) { %>
         <li class="nav-item">
-          <a class="nav-link fw-semibold text-info" href="/admin/login">Login</a>
+          <a class="nav-link fw-semibold text-danger" style="font-size: 20px" href="/admin/login">Login</a>
         </li>
       <% } else { %>
         <li class="nav-item">
-          <a class="nav-link fw-semibold text-warning" href="/admin/report-upload">Upload</a>
+          <a class="nav-link fw-semibold text-warning" style="font-size: 20px" href="/admin/report-upload">Upload</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link fw-semibold text-danger" href="/admin/logout">Logout</a>
+          <a class="nav-link fw-semibold text-danger" style="font-size: 20px" href="/admin/logout">Logout</a>
         </li>
       <% } %>
 
