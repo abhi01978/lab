@@ -7,8 +7,7 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!--        CSS file-->
-<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" ...>
 
     <link
       href="Bootstrap/css/bootstrap.min.css"
@@ -39,7 +38,6 @@
 
     </style>
   </head>
-
   <body>
     <!-- Dark Bootstrap Navbar without Toggle -->
 <nav class="navbar navbar-dark bg-dark border-bottom shadow-sm">
@@ -50,19 +48,19 @@
     <ul class="navbar-nav flex-row gap-3 align-items-center">
 
       <li class="nav-item">
-        <a class="nav-link fw-semibold text-info" style="font-size: 20px" href="/admin/reports">Download lab  Reports</a>
+        <a class="nav-link fw-semibold text-info" href="/admin/reports">Reports</a>
       </li>
 
       <% if (!isAdmin) { %>
         <li class="nav-item">
-          <a class="nav-link fw-semibold text-danger" style="font-size: 20px" href="/admin/login">Login</a>
+          <a class="nav-link fw-semibold text-success" href="/admin/login">Login</a>
         </li>
       <% } else { %>
         <li class="nav-item">
-          <a class="nav-link fw-semibold text-warning" style="font-size: 20px" href="/admin/report-upload">Upload</a>
+          <a class="nav-link fw-semibold text-warning" href="/admin/report-upload">Upload</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link fw-semibold text-danger" style="font-size: 20px" href="/admin/logout">Logout</a>
+          <a class="nav-link fw-semibold text-danger" href="/admin/logout">Logout</a>
         </li>
       <% } %>
 
@@ -70,14 +68,13 @@
   </div>
 </nav>
 
-
     <header class="header-1">
   <!-- Topbar -->
   <div class="bg-dark text-white py-2">
     <div class="container d-flex justify-content-between align-items-center flex-wrap">
       <div>
-        <i class="fas fa-phone-alt me-2"></i> +919711116699
-        <span class="ms-3"><i class="fas fa-envelope me-2"></i> info@taradiagnostics.in</span>
+        <i class="fas fa-phone-alt me-2"></i> +91 98765 43210, +91 78279 45651
+        <span class="ms-3"><i class="fas fa-envelope me-2"></i> info@taradiagnostics.com</span>
       </div>
       <div class="d-none d-lg-flex gap-3">
         <a href="#" class="text-white"><i class="fab fa-facebook-f"></i></a>
@@ -98,11 +95,6 @@
     </div>
   </div>
 </div>
-
-
-
-
-
   <!-- Navbar -->
   <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm sticky-top py-2">
   <div class="container">
@@ -151,11 +143,7 @@
     </div>
   </div>
 </nav>
-
-
 </header>
-
-    
    <!-- Modern Professional Diagnostic Header -->
 <header class="bg-light py-5" id="home">
   <div class="container py-5">
@@ -196,6 +184,7 @@
     </div>
   </div>
 </header>
+
 <!-- About Us -->
   <section class="bg-white py-5 py-md-6" id="about">
   <div class="container">
@@ -215,18 +204,15 @@
       
       <!-- Left Image -->
       <div class="col-lg-6 mb-4 mb-lg-0">
-        <img src="/image/ess.jpg" alt="About Tara Diagnostics" class="img-fluid rounded shadow" />
+        <img src="/image/about.png" alt="About Tara Diagnostics" class="img-fluid rounded shadow" />
       </div>
 
       <!-- Right Content -->
       <div class="col-lg-6">
         <div class="ps-lg-4">
           <p class="mb-4 text-muted fs-6">
-            <strong class="text-dark">Tara Diagnostics</strong> is committed to delivering accurate,
-            affordable, and timely diagnostic services to support better
-            healthcare outcomes for all. Founded with the vision of making
-            quality diagnostic testing accessible to every individual, Tara
-            Diagnostics combines modern technology, skilled professionals, and patient-centric care.
+            <strong class="text-dark">Tara Diagnostics</strong> 
+ Center has been active in the business since 2021, ifispired by my mother, Tara Saxena. Our growth and expansion have been a significant journey in many aspects, beginning from humble beginnings. Now, we are seen as one of the best medical services provider around, resolving issues and problems in a robust and highly effective way all across the board. Our medical health services are diverse, and we also have several allied health professionals who can handle any project or request you may require. Our overall expertise extends to connecting and facilitating relationships between patients, doctors, insurance parties, as well as many other corporate health entities in general. Tara Diagnostic is fully committed to give to you the highest value of life. The full-fledged use of all things is necessary to ensure the best quality of health and well-being for everyone in terms of services. Our values are carried through these services, with significant portions and allowances on every level.
           </p>
           <p class="mb-4 text-muted fs-6">
             Our state-of-the-art facilities are equipped with advanced diagnostic equipment,
@@ -246,13 +232,14 @@
   </div>
 </section>
 <!-- END -->
+
 <section class="py-5 bg-light" id="popular-tests">
   <div class="container">
     <!-- Heading -->
     <div class="row justify-content-center mb-4">
       <div class="col-lg-8 text-center">
-        <h2 class="fw-bold mb-3 text-dark">Popular Test</h2>
-        <p class="text-muted">Explore our most recommended health checkups</p>
+        <h2 class="fw-bold mb-3 text-dark">Our Services</h2>
+        <!-- <p class="text-muted">Explore our most recommended health checkups</p> -->
       </div>
     </div>
 
@@ -266,10 +253,10 @@
             <!-- Card 1 -->
             <div class="col-md-6 col-lg-3 mb-4">
               <div class="card h-100 border-0 shadow-sm">
-                <img src="https://hanumanbalajicharitablediagnostics.org/uploads/Fever-and-total-care.jpg" class="card-img-top" alt="Total Care Checkup">
+                <img src="https://www.health360.in/images/whole-body-header.jpg" class="card-img-top" alt="Total Care Checkup">
                 <div class="card-body">
-                  <h5 class="card-title">Total Care Checkup</h5>
-                  <p class="card-text">Includes KFT, LFT, HbA1C, Vitamin D, B12, Thyroid, and more.</p>
+                  <h5 class="card-title">MRI Scans</h5>
+                  <!-- <p class="card-text">Includes KFT, LFT, HbA1C, Vitamin D, B12, Thyroid, and more.</p> -->
                   <!-- <a href="photo/Total Care Checkup.jpg" class="btn btn-sm btn-primary">Know More</a> -->
                 </div>
               </div>
@@ -278,10 +265,10 @@
             <!-- Card 2 -->
             <div class="col-md-6 col-lg-3 mb-4">
               <div class="card h-100 border-0 shadow-sm">
-                <img src="/image/Digital Chest X-ray.jpeg" class="card-img-top" alt="Digital Chest X-ray">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDkjHrLIjGZwvedskKQNxHQVyzNJi0JwYLr5m38uIqWTqMoh5dNfIewKcQ_M8Xap4rFo4&usqp=CAU" class="card-img-top" alt="Digital Chest X-ray">
                 <div class="card-body">
-                  <h5 class="card-title">Digital Chest X-ray</h5>
-                  <p class="card-text">Modern digital imaging to diagnose chest-related issues.</p>
+                  <h5 class="card-title">CT Scans</h5>
+                  <!-- <p class="card-text">Modern digital imaging to diagnose chest-related issues.</p> -->
                   <!-- <a href="total-care-checkup.php" class="btn btn-sm btn-primary">Know More</a> -->
                 </div>
               </div>
@@ -290,10 +277,10 @@
             <!-- Card 3 -->
             <div class="col-md-6 col-lg-3 mb-4" id="CBC">
               <div class="card h-100 border-0 shadow-sm">
-                <img src="/image/CBC Test" class="card-img-top" alt="CBC Test">
+                <img src="https://blog.healtether.com/wp-content/uploads/2025/02/ct-scan.jpg" class="card-img-top" alt="CBC Test">
                 <div class="card-body">
-                  <h5 class="card-title">CBC Test</h5>
-                  <p class="card-text">Complete Blood Count including RBC, WBC, Platelets, Hemoglobin, etc.</p>
+                  <h5 class="card-title">PET Scans</h5>
+                  <!-- <p class="card-text">Complete Blood Count including RBC, WBC, Platelets, Hemoglobin, etc.</p> -->
                   <!-- <a href="total-care-php" class="btn btn-sm btn-primary">Know More</a> -->
                 </div>
               </div>
@@ -302,10 +289,10 @@
             <!-- Card 4 -->
             <div class="col-md-6 col-lg-3 mb-4">
               <div class="card h-100 border-0 shadow-sm">
-                <img src="/image/KFT" class="card-img-top" alt="KFT Test">
+                <img src="https://www.phoenixhospitalgroup.com/wp-content/uploads/2022/01/Website-hero-images-4-6.png" class="card-img-top" alt="KFT Test">
                 <div class="card-body">
-                  <h5 class="card-title">KFT / RFT Test</h5>
-                  <p class="card-text">Evaluate kidney function including Creatinine, Urea, Electrolytes, etc.</p>
+                  <h5 class="card-title">X-Ray</h5>
+                  <!-- <p class="card-text">Evaluate kidney function including Creatinine, Urea, Electrolytes, etc.</p> -->
                   <!-- <a href="total-care-checkup.php" class="btn btn-sm btn-primary">Know More</a> -->
                 </div>
               </div>
@@ -316,13 +303,81 @@
     </div>
   </div>
 </section>
+<section class="py-5 bg-light" id="popular-tests">
+  <div class="container">
+    
+
+    <!-- Carousel -->
+    <div id="popularTestCarousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+
+        <!-- Slide 1 -->
+        <div class="carousel-item active">
+          <div class="row">
+            <!-- Card 1 -->
+            <div class="col-md-6 col-lg-3 mb-4">
+              <div class="card h-100 border-0 shadow-sm">
+                <img src="https://akm-img-a-in.tosshub.com/indiatoday/images/story/202203/ultrasound.jpg" class="card-img-top" alt="Total Care Checkup">
+                <div class="card-body">
+                  <h5 class="card-title">Ultrasound</h5>
+                  <!-- <p class="card-text">Includes KFT, LFT, HbA1C, Vitamin D, B12, Thyroid, and more.</p> -->
+                  <!-- <a href="photo/Total Care Checkup.jpg" class="btn btn-sm btn-primary">Know More</a> -->
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="col-md-6 col-lg-3 mb-4">
+              <div class="card h-100 border-0 shadow-sm">
+                <img src="https://cdn.flabs.in/webassets/919397855f803d31f1d4.png" class="card-img-top" alt="Digital Chest X-ray">
+                <div class="card-body">
+                  <h5 class="card-title">Pathology Test</h5>
+                  <!-- <p class="card-text">Modern digital imaging to diagnose chest-related issues.</p> -->
+                  <!-- <a href="total-care-checkup.php" class="btn btn-sm btn-primary">Know More</a> -->
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="col-md-6 col-lg-3 mb-4" id="CBC">
+              <div class="card h-100 border-0 shadow-sm">
+                <img src="https://www.diginerve.com/blogs/wp-content/uploads/2023/05/Career-as-a-Pediatrician-How-to-Become-Courses-Job-Profiles-Salary-_-Scope.webp" class="card-img-top" alt="CBC Test">
+                <div class="card-body">
+                  <h5 class="card-title">Pediatrics</h5>
+                  <!-- <p class="card-text">Complete Blood Count including RBC, WBC, Platelets, Hemoglobin, etc.</p> -->
+                  <!-- <a href="total-care-php" class="btn btn-sm btn-primary">Know More</a> -->
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="col-md-6 col-lg-3 mb-4">
+              <div class="card h-100 border-0 shadow-sm">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmgLDJ6Tsx-fyDKeR3nLpD2wYAjz6o__9lRfqsLa-UYDDwDd4ZzBnlPOvsI7DahTPog1I&usqp=CAU" class="card-img-top" alt="KFT Test">
+                <div class="card-body">
+                  <h5 class="card-title">Diabetology</h5>
+                  <!-- <p class="card-text">Evaluate kidney function including Creatinine, Urea, Electrolytes, etc.</p> -->
+                  <!-- <a href="total-care-checkup.php" class="btn btn-sm btn-primary">Know More</a> -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<!-- Lifecycle -->
 <section class="py-5 text-dark" style="background: url('https://hanumanbalajicharitablediagnostics.org/web/images/1920-650-2.jpg') center center / cover no-repeat;" id="healthcare">
   <div class="container">
     <!-- Heading -->
     <div class="row justify-content-center mb-4">
       <div class="col-lg-8 text-center">
-        <h2 class="fw-bold mb-3 text-black">Health Packages</h2>
-        <p class="text-light">Choose from our best diagnostic packages to monitor your health regularly.</p>
+        <h2 class="fw-bold mb-3 text-black">Lifecycle Disorder</h2>
+        <!-- <p class="text-light">Choose from our best diagnostic packages to monitor your health regularly.</p> -->
       </div>
     </div>
 
@@ -331,10 +386,10 @@
       <!-- Card 1 -->
       <div class="col-md-6 col-lg-3 mb-4">
         <div class="card h-100 border-0 shadow-sm">
-          <img src="/image/Total Care Checkup.jpg" class="card-img-top" alt="Total Care Checkup">
+          <img src="https://images.indianexpress.com/2019/09/kidney_health_759.jpg" class="card-img-top" alt="Total Care Checkup">
           <div class="card-body">
-            <h5 class="card-title">Total Care Checkup</h5>
-            <p class="card-text">A comprehensive health package to assess your overall well-being and detect early signs of illness.</p>
+            <h5 class="card-title">Kidney</h5>
+            <!-- <p class="card-text">A comprehensive health package to assess your overall well-being and detect early signs of illness.</p> -->
           </div>
         </div>
       </div>
@@ -342,10 +397,10 @@
       <!-- Card 2 -->
       <div class="col-md-6 col-lg-3 mb-4">
         <div class="card h-100 border-0 shadow-sm">
-          <img src="/image/CBC Test" class="card-img-top" alt="CBC Test">
+          <img src="https://img.freepik.com/free-photo/skin-allergy-reaction-person-s-arm_23-2149140472.jpg" class="card-img-top" alt="CBC Test">
           <div class="card-body">
-            <h5 class="card-title">Complete Haemogram (CBC)</h5>
-            <p class="card-text">Provides detailed info about RBCs, WBCs, and platelets to check blood-related conditions.</p>
+            <h5 class="card-title">Allergy</h5>
+            <!-- <p class="card-text">Provides detailed info about RBCs, WBCs, and platelets to check blood-related conditions.</p> -->
           </div>
         </div>
       </div>
@@ -353,10 +408,10 @@
       <!-- Card 3 -->
       <div class="col-md-6 col-lg-3 mb-4">
         <div class="card h-100 border-0 shadow-sm">
-          <img src="/image/Super Care Health Package.jpg" class="card-img-top" alt="Super Care Health Package">
+          <img src="https://medanta.s3.ap-south-1.amazonaws.com/blogs/January2025/KCN125TOSTRgdBXXtK1QinfWz1Ny2u-metac2h1dHRlcnN0b2NrXzI0NzIxNjQ0ODcgKDEpLmpwZw==-.jpg" class="card-img-top" alt="Super Care Health Package">
           <div class="card-body">
-            <h5 class="card-title">Super Care Health Package</h5>
-            <p class="card-text">A deeper full-body diagnostic package with essential blood tests, organ function checks, and preventive screenings.</p>
+            <h5 class="card-title">Heart</h5>
+            <!-- <p class="card-text">A deeper full-body diagnostic package with essential blood tests, organ function checks, and preventive screenings.</p> -->
           </div>
         </div>
       </div>
@@ -364,16 +419,43 @@
       <!-- Card 4 -->
       <div class="col-md-6 col-lg-3 mb-4">
         <div class="card h-100 border-0 shadow-sm">
-          <img src="/image/1692777256.jpg" class="card-img-top" alt="Basic Care">
+          <img src="https://www.wwmedgroup.com/wp-content/uploads/pulmonary-western-washington-medical-group-wwmg-iStock-1360866086-700x390-c-default.webp" class="card-img-top" alt="Basic Care">
           <div class="card-body">
-            <h5 class="card-title">Basic Care Health Package</h5>
-            <p class="card-text">Affordable package for early detection of common health issues like anemia, infections, and sugar irregularities.</p>
+            <h5 class="card-title">Lungs</h5>
+            <!-- <p class="card-text">Affordable package for early detection of common health issues like anemia, infections, and sugar irregularities.</p> -->
           </div>
         </div>
       </div>
     </div>
   </div>
 </section>
+<!-- end Lifecycle -->
+
+<!-- WHY CHOOSE US SECTION -->
+<section class="py-5 bg-light">
+  <div class="container">
+    <h2 class="mb-4 fw-bold text-center text-primary">Why Choose Tara Diagnostic</h2>
+    
+    <p class="fs-5">
+      Tara Diagnostic offers a variety of services to our patients at affordable prices, as we prioritize your health. Our team of skilled and talented individuals is committed to providing the best service to our clients.
+    </p>
+    
+    <p class="fs-5">
+      Supporting people is possible through a Charitable Pathology service. Our technologies have been upgraded to ensure that each test and check-up report is 100% accurate.
+    </p>
+    
+    <p class="fs-5">
+      30,000+ doctors have trusted our organization. Active in the business for quite some time. From our growth and expansion have been significant journeys of many things since humble beginnings.
+    </p>
+    
+    <p class="fs-5">
+      We are recognized as one of the top diagnostic centers and pathology labs in Delhi NCR because of our expertise in problem-solving and efficiency in all areas.
+    </p>
+  </div>
+</section>
+
+
+
 
 <section class="py-5 bg-light" id="facilities">
   <div class="container">
@@ -460,11 +542,7 @@
       <div class="col-lg-8">
         <div class="card shadow-sm border-0">
           <div class="card-body p-4">
-            <form novalidate  action="https://formsubmit.co/info@taradiagnostics.in" method="POST">
-<input type="hidden" name="_captcha" value="false" />
-  <input type="hidden" name="_next" value="https://lab-2pza.onrender.com/" />
-
-
+            <form novalidate>
               <div class="mb-3">
                 <input
                   type="text"
@@ -550,9 +628,9 @@
           <div class="widget widget-contact">
             <h5 class="text-white fw-bold mb-3">Reach Out</h5>
             <ul class="footer-text list-unstyled">
-              <li class="mb-2"><i class="fas fa-map-marker-alt me-2"></i> Site #262, Girdharpur Road, Chaprulla, GB Nagar -201009</li>
-              <li class="mb-2"><i class="fas fa-phone me-2"></i>+91 97111 16699</li>
-              <li><i class="fas fa-envelope me-2"></i> info@taradiagnostics.in</li>
+              <li class="mb-2"><i class="fas fa-map-marker-alt me-2"></i> Yugpurush Mahashay Dharampal MDH Charitable Diagnostic Bhawan, Karkardooma, New Delhi-110092</li>
+              <li class="mb-2"><i class="fas fa-phone me-2"></i> +91 98765 43210, 7827945651</li>
+              <li><i class="fas fa-envelope me-2"></i> info@taradiagnostics.com</li>
             </ul>
           </div>
         </div>
@@ -602,31 +680,27 @@
         <li class="list-inline-item me-3"><a href="#" class="text-light text-decoration-none">Terms & Conditions</a></li>
         <li class="list-inline-item"><a href="#" class="text-light text-decoration-none">Usage Rights</a></li>
       </ul>
-      <p class="mb-0 text-light">&copy; 2025, Design by: <a href="https://liveindiatech.com" class="text-light">Live india tech.</a></p>
+      <p class="mb-0 text-light">&copy; 2025, Shailendra Kr — All Rights Reserved.</p>
     </div>
   </div>
 </footer>
 
 <!-- Fixed Call Button (All Devices) -->
-<a href="tel:+91 97111 16699 " 
-   class="position-fixed bottom-0 start-0 m-4 bg-primary text-white px-3 py-2 rounded shadow"
+<a href="tel:+919289461191" 
+   class="fixed bottom-4 left-4 bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-full shadow-lg z-50 flex items-center gap-2 bounce-infinite"
    title="Call Now">
-  <i class="fas fa-phone"></i>
-  <span class="d-none d-sm-inline">Call Now</span>
+  <i class="fas fa-phone text-lg"></i>
+  <span class="text-sm font-medium  sm:inline">Call Now</span>
 </a>
-
 
 <!-- Fixed WhatsApp Button (All Devices) -->
-<a href="https://wa.me/919711116699?text=Name:%0ARequirement:"
+<a href="https://wa.me/919289461191?text=How%20can%20I%20help%20you%3F%20I%20am%20happy%20to%20assist%20you.%20%F0%9F%98%8A"
    target="_blank"
-   class="position-fixed bottom-0 end-0 m-4 bg-success text-white px-3 py-2 rounded shadow"
+   class="fixed bottom-4 right-4 bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded-full shadow-lg z-50 flex items-center gap-2 bounce-infinite"
    title="Chat on WhatsApp">
-  <i class="fab fa-whatsapp"></i>
-  <span class="d-none d-sm-inline">Book Appointment</span>
+  <i class="fab fa-whatsapp text-lg"></i>
+  <span class="text-sm font-medium  sm:inline">Ask Me Any Question</span>
 </a>
-
-
-
     <!-- Swiper JS (before </body>) -->
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
